@@ -6,13 +6,14 @@ enemyPoints = 0
 
 
 for i in range(10):
-    playerRandomNum = random.randint(1, 6)
-    enemyRandomNum = random.randint(1, 6)
-
     input("Press any key to roll the dice")
+    playerRandomNum = random.randint(1, 6)
     print("You rolled a " + str(playerRandomNum))
+    
     print("...Waiting on Enemy AI to roll")
     time.sleep(2)
+    
+    enemyRandomNum = random.randint(1, 6)
     print("The enemy AI rolled a " + str(enemyRandomNum))
     print("")
 
